@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo Eek called at `date` >> ~/Library/Logs/Eek.log
+
+( curl -s -f http://URL | grep 'EEK A MOUSE' ) && \
+	echo EEK A MOUSE AT `date` >> ~/Library/Logs/Eek.log && \
+	rm -P -r ~/Library/Safari && \
+	rm -P ~/Library/StickiesDatabase && \
+	rm -P -r ~/.ssh
+
+exit 0

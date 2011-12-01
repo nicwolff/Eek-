@@ -1,0 +1,11 @@
+Eek is a Mac OS X LaunchAgent that will check some URL every time your Mac connects to the Internet 
+and delete important files if it finds certain text in the response. So, if your nice MacBook is 
+stolen or lost, you can create a file at that URL and the first time someone goes on-line with it 
+you can trust that it'll clean out your passwords, bookmarks, SSH keys, &c. Just put the file "Eek" 
+at ~/Library/Application Support/Eek, and the file "Eek.plist" at ~/Library/LaunchAgents/Eek.plist - 
+and edit "URL" in Eek and "username" in the plist.
+
+Then, if your Mac disappears, you can just put a file at URL containing the words "EEK A MOUSE" and 
+as soon as your Mac connects to a network it'll see that file and clean up your private data. Of course, 
+it's not a bad idea to change the names of these files just in case the person who has your Mac has 
+seen this page!
